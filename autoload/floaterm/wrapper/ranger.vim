@@ -38,4 +38,6 @@ function! s:ranger_callback(...) abort
       endfor
     endif
   endif
+  " Reset floaterm_open_command in case a keybinding changed it
+  let g:floaterm_open_command = g:floaterm_open_command_copy
 endfunction
